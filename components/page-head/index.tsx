@@ -1,0 +1,22 @@
+import Head from 'next/head';
+
+type Props = {
+  title: React.ReactNode;
+  description: string;
+  keywords?: string;  
+}
+
+export function PageHead({ ...props }: Props) {
+  return (
+    <>
+       <Head>
+        <title>{props.title} - DeliveryApp FrontExpert</title>
+        <meta name="description" content={props.description} />
+        <meta name="keywords" content={props.keywords} />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      
+    </>
+
+  )
+}
