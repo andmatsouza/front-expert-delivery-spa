@@ -14,9 +14,11 @@
 .label {
   @apply uppercase tracking-wider;
   @apply text-xs font-bold text-gray-800;
+  color: #182135;
 }
 
-.input {
-  @apply w-full py-3 border-b text-xl text-gray-600;
+.input {  
+  @apply w-full py-3 border-b text-xl;
   @apply focus:border-indigo-500 focus:outline-none;
+  color: #626264;
 }
