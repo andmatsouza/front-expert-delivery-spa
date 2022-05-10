@@ -1,10 +1,16 @@
-import { 
-  IconFire, 
-  IconKnife, 
-  IconMap, 
-  IconMotorcycle, 
-  IconStore, 
-  IconWallet 
+import {
+  IconFire,
+  IconKnife,
+  IconMap,
+  IconMotorcycle,
+  IconStore,
+  IconWallet,
+  IconHome,
+  IconExplorer,
+  IconFavorite,
+  IconOrder,
+  IconMail,
+  IconGear,
 } from "../icon-family";
 
 
@@ -35,6 +41,24 @@ export const IconBase = ({ iconName, size, color }: IconBaseProps): JSX.Element 
       break;
     case "knife":
       IconComponet = <IconKnife size={size} color={color} />;
+      break;
+    case "home":
+      IconComponet = <IconHome size={size} color={color} />;
+      break;
+    case "explorer":
+      IconComponet = <IconExplorer size={size} color={color} />;
+      break;
+    case "favorite":
+      IconComponet = <IconFavorite size={size} color={color} />;
+      break;
+    case "order":
+      IconComponet = <IconOrder size={size} color={color} />;
+      break;
+    case "mail":
+      IconComponet = <IconMail size={size} color={color} />;
+      break;
+    case "gear":
+      IconComponet = <IconGear size={size} color={color} />;
       break;
 
     default:
