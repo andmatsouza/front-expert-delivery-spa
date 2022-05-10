@@ -1,4 +1,5 @@
 import React from "react";
+import Styles from './styles.module.css';
 
 type Props = {
   children: React.ReactNode;
@@ -8,7 +9,7 @@ type Props = {
 export function Button({ ...props }: Props) {
   return (
     <>
-      <button className={`${props.className} rounded-xl font-bold`}>{props.children}</button>
+      <button className={`${props.className} ${Styles.button}`}>{props.children}</button>
     </>
 
   )
