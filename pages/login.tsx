@@ -16,7 +16,7 @@ const Login: NextPage = () => {
 
             <InputText label='Endereço de E-mail' type='email' placeholder='Informe o seu e-mail' />
             <InputText label='Senha' type='password' placeholder='Informe a senha' />
-            <Button className='bg-indigo-200 w-full p-4 text-xl text-indigo-600'>Login</Button>
+            <Button className='bg-indigo-200 text-xl text-indigo-600'>Login</Button>
             <div className='block text-center p-6'>
               <Link href='/forgot'>
                 <a className='mt-6 text-slate-600 mb-6 hover:text-slate-900'>Recuperar senha</a>
