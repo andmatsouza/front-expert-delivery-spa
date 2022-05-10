@@ -13,11 +13,17 @@
   padding-right: 32px;
   padding-top: 32px;
   padding-bottom: 48px;
+  display: flex;
+  align-items: center;
 }
 
-.header p {
+.header h3 {
+  color: #000000;  
+  padding-left: 15px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 700;
   color: #000000;
-  @apply text-xl leading-6;
 }
 
 .footer {
