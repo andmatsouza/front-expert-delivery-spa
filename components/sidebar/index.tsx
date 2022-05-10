@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Styles from './styles.module.css';
+import { IconBase } from '../../components/icon';
 
 export const Sidebar = () => {
   return (
@@ -9,18 +10,22 @@ export const Sidebar = () => {
         <p><span>ico</span>DeliveryAPP FX</p>
       </div>
       <ul className={Styles.menu}>
-        <li>
+        <li className={Styles.active}>
           <Link href="/">
             <a>
-              <span>ico</span>
+              <span>
+                <IconBase iconName="home" color="#A3A3A4" />
+              </span>
               Home
             </a>
           </Link>
         </li>
-        <li className={Styles.active}>
+        <li>
           <Link href="/explorar">
             <a>
-              <span>ico</span>
+              <span>
+                <IconBase iconName="explorer" color="#A3A3A4" />
+              </span>
               Explorar
             </a>
           </Link>
@@ -28,7 +33,9 @@ export const Sidebar = () => {
         <li>
           <Link href="/favoritos">
             <a>
-              <span>ico</span>
+              <span>
+              <IconBase iconName="favorite" color="#A3A3A4" />
+              </span>
               Favoritos
             </a>
           </Link>
@@ -36,7 +43,9 @@ export const Sidebar = () => {
         <li>
           <Link href="/orders">
             <a>
-              <span>ico</span>
+              <span>
+              <IconBase iconName="order" color="#A3A3A4" />
+              </span>
               Pedidos
             </a>
           </Link>
@@ -44,7 +53,9 @@ export const Sidebar = () => {
         <li>
           <Link href="/">
             <a>
-              <span>ico</span>
+              <span>
+              <IconBase iconName="mail" color="#A3A3A4" />
+              </span>
               Mensagens
             </a>
           </Link>
@@ -52,7 +63,9 @@ export const Sidebar = () => {
         <li>
           <Link href="/">
             <a>
-              <span>ico</span>
+              <span>
+              <IconBase iconName="gear" color="#A3A3A4" />
+              </span>
               Configurações
             </a>
           </Link>
