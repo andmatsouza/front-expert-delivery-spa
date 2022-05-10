@@ -7,3 +7,4 @@ export * from './categories';
 export * from './highlights';
 export * from './category';
 export * from './icon';
+export * from './user-profile';
