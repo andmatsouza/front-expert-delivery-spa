@@ -14,10 +14,14 @@ export const IconArrowTopDown = (props: IconProps) => {
     >     
 
       <path
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M6.645 15L12 20.5674L17.355 15L19 16.7224L12 24L5 16.7224L6.645 15Z"        
         fill={color || "gray"}
       />
       <path
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M17.355 9L12 3.43261L6.645 9L5 7.27763L12 0L19 7.27763L17.355 9Z"        
         fill={color || "gray"}
       />

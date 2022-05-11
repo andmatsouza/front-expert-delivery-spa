@@ -12,3 +12,6 @@ export * from "./icon-mail";
 export * from "./icon-gear";
 export * from "./icon-arrow-top-down";
 export * from "./icon-arrow-rigth";
+export * from "./icon-star";
+export * from "./icon-money";
+export * from "./icon-target-location";

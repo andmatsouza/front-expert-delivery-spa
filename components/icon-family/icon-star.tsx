@@ -1,14 +1,14 @@
 import { IconProps } from "../../types";
 
 
-export const IconArrowRight = (props: IconProps) => {
+export const IconStar = (props: IconProps) => {
   const { size, color } = props;
 
   return (
     <svg
-      width={size || "24"}
-      height={size || "24"}
-      viewBox="0 0 12 12"
+      width={size || "16"}
+      height={size || "16"}
+      viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -16,11 +16,9 @@ export const IconArrowRight = (props: IconProps) => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M2 10.59L6.63949 6L2 1.41L3.43531 0L9.5 6L3.43531 12L2 10.59Z"
+        d="M8 12.8589L12.944 16L11.632 10.08L16 6.09684L10.248 5.57474L8 0L5.752 5.57474L0 6.09684L4.36 10.08L3.056 16L8 12.8589Z"
         fill={color || "gray"}
       />
     </svg>
   );
 };
-
-
