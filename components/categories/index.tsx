@@ -1,7 +1,8 @@
 import React from "react";
-//import Styles from './styles.module.css';
+import Styles from './styles.module.css';
 import Link from "next/link";
 import { Category } from '../../components';
+import { IconArrowRight } from "../icon-family";
 
 
 export const Categories = () => {
@@ -45,10 +46,14 @@ export const Categories = () => {
   ];
   return (
     <div>
-      <div className="flex">
-        <h2 className="grow">Explorar Categorias</h2>
+      <div className={Styles.header}>
+        <h2>Explorar Categorias</h2>
         <Link href="/categories">
-          <a>Ver todas</a>
+          <a>
+
+            Ver todas
+            <IconArrowRight size="12" color="#5B4AA3" />
+            </a>
         </Link>
       </div>
       <div className="flex gap-6 justify-between">
