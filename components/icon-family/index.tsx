@@ -11,3 +11,4 @@ export * from "./icon-order";
 export * from "./icon-mail";
 export * from "./icon-gear";
 export * from "./icon-arrow-top-down";
+export * from "./icon-arrow-rigth";
