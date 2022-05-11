@@ -45,7 +45,7 @@ export const Categories = () => {
     }
   ];
   return (
-    <div>
+    <div className="mb-12">
       <div className={Styles.header}>
         <h2>Explorar Categorias</h2>
         <Link href="/categories">
