@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Categories, Highlights, Navbar, Sidebar } from '../components';
+import { Categories, Highlights, Navbar, Sidebar, FoodList } from '../components';
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +16,7 @@ const Home: NextPage = () => {
           <Navbar />
           <Categories />
           <Highlights />
+          <FoodList />
         </div>
       </div>
     </>
