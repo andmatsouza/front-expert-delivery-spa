@@ -8,3 +8,4 @@ export * from './highlights';
 export * from './category';
 export * from './icon';
 export * from './user-profile';
+export * from './foods';
