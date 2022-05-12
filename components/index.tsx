@@ -9,3 +9,5 @@ export * from './category';
 export * from './icon';
 export * from './user-profile';
 export * from './foods';
+export * from './food-item';
+export * from './details-item';
