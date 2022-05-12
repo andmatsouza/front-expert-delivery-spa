@@ -1,27 +1,27 @@
-import Styles from './styles.module.css';
-import { IconKnife, IconStar, IconMoney, IconTargetLocation } from '../icon-family';
+import Link from 'next/link';
 import Image from 'next/image';
+import { IconKnife, IconStar, IconMoney, IconTargetLocation } from '../icon-family';
+import { TypePageProps } from './types';
+import Styles from './styles.module.css';
 
-type Props = {
-  name: string;
-  rate: number;
-  comments: number;
-  distance: number;
-  food: string;
-  price: number;
-  bonus: string;
-  brandUrl: string;
 
-};
 
-export const HighlightsItem = ({ name, brandUrl, rate, comments, food, price, distance, bonus }: Props) => {
+export const HighlightsItem = ({ id, name, brandUrl, rate, comments, food, price, distance, bonus }: TypePageProps) => {
   return (
     <div className={Styles.restaurant}>
-      <div className={Styles.brand}>
-        <Image src={brandUrl} alt={name} width={64} height={64} />
-      </div>
+      <Link href={`/restaurants/${id}`}>
+        <a>
+          <div className={Styles.brand}>
+            <Image src={brandUrl} alt={name} width={64} height={64} />
+          </div>
+        </a>
+      </Link>
       <div className={Styles.information}>
-        <h3>{name}</h3>
+        <h3>
+          <Link href={`/restaurants/${id}`}>
+            <a>{name}</a>
+          </Link>
+        </h3>
         <div className='my-3'>
           <div>
             <IconStar size={16} color="#FACD5D" />
