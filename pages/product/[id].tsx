@@ -30,6 +30,7 @@ export async function getServerSideProps({ params }: TypeParams) {
     props: {
       id: params.id,
       product: {
+        id: params.id,
         name: "Gigantic Rodeo Burger",
         imageUrl: "/foods/burger.jpg",
         deliveryFee: '2.99 Entrega',
