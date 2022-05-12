@@ -5,6 +5,7 @@ export const FoodList = () => {
 
   const data = [
     {
+      id: "1",
       name: "Gigantic Rodeo Burger",
       imageUrl: "/foods/burger.jpg",
       deliveryFee: '2.99 Entrega',
@@ -14,6 +15,7 @@ export const FoodList = () => {
       deliveryTime: "45 - 55 min",
     },
     {
+      id: "2",
       name: "Peperoni Pie",
       imageUrl: "/foods/pizza-peperoni.jpg",
       deliveryFee: 'Entrega grátis',
@@ -23,6 +25,7 @@ export const FoodList = () => {
       deliveryTime: "30 - 45 min",
     },
     {
+      id: "3",
       name: "Natural Vegetable Rice",
       imageUrl: "/foods/vegan.jpg",
       deliveryFee: '3.45 Entrega',
@@ -32,6 +35,7 @@ export const FoodList = () => {
       deliveryTime: "35 - 40 min",
     },
     {
+      id: "4",
       name: "Delicious Cheese Pie",
       imageUrl: "/foods/cheesecake.jpg",
       deliveryFee: 'Entrega grátis',
@@ -41,6 +45,7 @@ export const FoodList = () => {
       deliveryTime: "15 - 25 min",
     },
     {
+      id: "5",
       name: "Chef's Burger Deluxe",
       imageUrl: "/foods/chef-burger.jpg",
       deliveryFee: 'Entrega grátis',
@@ -50,6 +55,7 @@ export const FoodList = () => {
       deliveryTime: "30 - 45 min",
     },
     {
+      id: "6",
       name: "Vegetable Skewers",
       imageUrl: "/foods/vegetable.jpg",
       deliveryFee: '3.45 Entrega',
