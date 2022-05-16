@@ -1,21 +1,13 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import { FoodList, Sidebar, Navbar, DetailsItem } from "../components";
+import { FoodList, PageTemplate, DetailsItem } from "../components";
 import Styles from './restaurant.module.css';
 
 const Restaurant: NextPage = () => {
   return (
-    <>
-      <Head>
-        <title>Restaurante - Burguer King</title>
-        <meta name="description" content="Restaurante Burguer King" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div className='container m-auto flex'>
-
-        <Sidebar />
-        <div className='grow p-8'>
-          <Navbar />
+    <PageTemplate
+      title='Restaurante - Burguer King'
+      description='Restaurante Burguer King'
+    >          
           <div>[imagem]</div>
           <div className={Styles.header}>
             <div className={Styles.details}>
@@ -40,11 +32,8 @@ const Restaurant: NextPage = () => {
               distance="4,3 Km (Irving St, San Francisco, California)"
             />
           </div>
-          <FoodList />
-        </div>
-      </div>
-    </>
-
+          <FoodList />     
+    </PageTemplate>
   )
 };
 
