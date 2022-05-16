@@ -1,5 +1,5 @@
 import React from "react";
-import { InputIcon } from '../input-icon';
+//import { InputIcon } from '../input-icon';
 import Styles from './styles.module.css';
 
 type Props = {
@@ -13,7 +13,7 @@ export function InputText({ ...props }: Props) {
     <>
       <div className={Styles.container}>
         <div className={Styles.icon}>
-          <InputIcon size={24} color="#503E9D" />
+          
         </div>
         <div className="grow">
           <label className={Styles.label}>
