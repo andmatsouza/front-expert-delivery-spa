@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 type Props = {
   title: React.ReactNode;
-  description: string;
+  description?: string;
   keywords?: string;  
 }
 
