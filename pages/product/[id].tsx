@@ -1,25 +1,15 @@
-import Head from 'next/head';
-import { FoodItem, Navbar, Sidebar } from '../../components';
+import { FoodItem, PageTemplate } from '../../components';
 import { TypePageProps, TypeParams } from './types';
 
 function Product({ id, product, children }: TypePageProps) {
   return (
-    <>
-      <Head>
-        <title>
-          {product.name} - Restaurante XPTO
-        </title>
-        <meta name="description" content={`${product.name} no Restaurante XPTO`} />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div className='container m-auto flex'>
-        <Sidebar />
-        <div className='grow p-8'>
-          <Navbar />
-          <FoodItem {...product}/>
-        </div>
-      </div>
-    </>
+    <PageTemplate
+      title={`${product.name} - Restaurante XPTO`}
+      description={`${product.name} no Restaurante XPTO`}
+      keywords={`${product.name}, Restaurante XPTO, Restaurante, XPTO`}
+    >
+      <FoodItem {...product} />
+    </PageTemplate>
   )
 }
 
