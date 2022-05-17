@@ -86,7 +86,7 @@ export const Highlights = ({ title }: TypePageProps) => {
           </a>
         </Link>
       </div>
-      <div className="flex gap-6 justify-between flex-wrap">
+      <div className={Styles.container}>
         {data.map((item) => (
           <HighlightsItem key={item.name} {...item} />
         ))}

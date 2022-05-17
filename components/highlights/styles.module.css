@@ -23,3 +23,7 @@
 .header svg {
   margin-left: 8px;  
 }
+
+.container {
+  @apply flex gap-y-6 lg:gap-y-6 justify-between flex-wrap;
+}
