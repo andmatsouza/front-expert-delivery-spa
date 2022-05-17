@@ -1,12 +1,14 @@
-.thumb {
-  border-radius: 1rem;
-  overflow: hidden;
-  
-  margin-bottom: 1rem;
+.thumb { 
+  @apply w-full h-48 relative mb-4 overflow-hidden rounded-2xl;
 }
 
-.header {
-  display: flex;
+.header {  
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.item {
+  @apply w-full;
 }
 
 .header h3 {

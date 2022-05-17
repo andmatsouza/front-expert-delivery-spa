@@ -9,15 +9,14 @@ import Link from 'next/link';
 
 export const FoodItem = ({ ...props }: TypePageProps) => {
   return (
-    <div>
+    <div className={Styles.item}>
       <Link href={`/product/${props.id}`}>
         <a>
           <div className={Styles.thumb}>
             <Image
               src={props.imageUrl}
               alt={props.name}
-              width={336}
-              height={176}
+              layout="fill"
               loading="lazy"
             />
           </div>
