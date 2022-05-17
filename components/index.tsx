@@ -13,3 +13,4 @@ export * from './food-item';
 export * from './details-item';
 export * from './search-input';
 export * from './page-template';
+export * from './filter-modal';
