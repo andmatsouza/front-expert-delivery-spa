@@ -24,60 +24,48 @@ export const Sidebar = () => {
         <li className={Styles.active}>
           <Link href="/">
             <a>
-              <span>
-                <IconBase iconName="home" color="#A3A3A4" />
-              </span>
-              Home
+              <IconBase iconName="home" color="#A3A3A4" />
+              <span>Home</span>
             </a>
           </Link>
         </li>
         <li>
           <Link href="/explorer">
             <a>
-              <span>
-                <IconBase iconName="explorer" color="#A3A3A4" />
-              </span>
-              Explorar
+              <IconBase iconName="explorer" color="#A3A3A4" />
+              <span>Explorar</span>
             </a>
           </Link>
         </li>
         <li>
           <Link href="/favoritos">
             <a>
-              <span>
-                <IconBase iconName="favorite" color="#A3A3A4" />
-              </span>
-              Favoritos
+              <IconBase iconName="favorite" color="#A3A3A4" />
+              <span>Favoritos</span>
             </a>
           </Link>
         </li>
         <li>
           <Link href="/orders">
             <a>
-              <span>
-                <IconBase iconName="order" color="#A3A3A4" />
-              </span>
-              Pedidos
+              <IconBase iconName="order" color="#A3A3A4" />
+              <span>Pedidos</span>
             </a>
           </Link>
         </li>
         <li>
           <Link href="/">
             <a>
-              <span>
-                <IconBase iconName="mail" color="#A3A3A4" />
-              </span>
-              Mensagens
+              <IconBase iconName="mail" color="#A3A3A4" />
+              <span>Mensagens</span>
             </a>
           </Link>
         </li>
         <li>
           <Link href="/">
             <a>
-              <span>
-                <IconBase iconName="gear" color="#A3A3A4" />
-              </span>
-              Configurações
+              <IconBase iconName="gear" color="#A3A3A4" />
+              <span>Configurações</span>
             </a>
           </Link>
         </li>

@@ -1,11 +1,21 @@
-.sidebar {
-  width: 100%;
-  max-width: 304px;
-  min-height: 1024px;
+.sidebar { 
+  max-height: 1024px;
   background-color: #F7F7F7;
-  border-radius: 0 24px 24px 0;
-  display: flex;
-  flex-direction: column;
+  max-width: 112px;  
+  @apply w-full flex flex-col rounded-3xl;
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 100%;
+    max-width: 304px;
+  }
+}
+
+@media (min-width: 768px) {
+  .button, .userData {
+    @apply flex;
+  }
 }
 
 .header {
@@ -14,7 +24,7 @@
   padding-top: 32px;
   padding-bottom: 48px;
   display: flex;
-  align-items: center;
+  align-items: center;  
 }
 
 .header h3 {
@@ -24,15 +34,16 @@
   line-height: 1.5rem;
   font-weight: 700;
   color: #000000;
+  @apply hidden lg:block;
 }
 
-.footer {
+.footer {   
   padding: 32px;
 }
 
 .menu {
   flex-grow: 1;
-  padding: 0 15px;
+  padding: 0 28px;
 }
 
 .menu li {
@@ -46,8 +57,12 @@
   @apply font-bold text-base;  
 }
 
-.menu span {
-  margin-right: 24px;
+.menu svg {
+  @apply lg:mr-6;
+}
+
+.menu span {  
+  @apply hidden lg:block;
 }
 
 .menu li:hover {
