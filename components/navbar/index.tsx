@@ -11,9 +11,11 @@ import {
   IconSeach,
 } from "../icon-family";
 import { SearchInput} from "../search-input";
+import { useFilter } from "../../stores";
 
 
 export const Navbar = () => {
+  const {toggleModal} = useFilter(store => store);
   return (
     <div className={Styles.navbar}>      
         <ul className={Styles.nav}>
@@ -46,9 +48,9 @@ export const Navbar = () => {
           </li>
         </ul>      
       <SearchInput />
-      <ul>
+      <ul className={Styles.navButtons}>
         <li>
-          <button className={Styles.filterButton}>
+          <button className={Styles.filterButton} onClick={() => toggleModal()}>
             <IconFilter size={20} color="#ffffff" />
           </button>
         </li>
