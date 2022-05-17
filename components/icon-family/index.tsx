@@ -20,3 +20,4 @@ export * from "./icon-shopping-cart";
 export * from "./icon-filter";
 export * from "./icon-discount";
 export * from "./icon-search";
+export * from "./icon-hearth";
