@@ -11,6 +11,7 @@ import {
   IconOrder,
   IconMail,
   IconGear,
+  IconHearth,
 } from "../icon-family";
 
 
@@ -59,6 +60,9 @@ export const IconBase = ({ iconName, size, color }: IconBaseProps): JSX.Element 
       break;
     case "gear":
       IconComponet = <IconGear size={size} color={color} />;
+      break;
+      case "hearth":
+      IconComponet = <IconHearth size={size} color={color} />;
       break;
 
     default:
