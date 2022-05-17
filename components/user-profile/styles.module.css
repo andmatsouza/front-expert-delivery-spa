@@ -4,12 +4,12 @@
 }
 
 .userData {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: left;  
   flex-direction: column;
-  padding-left: 10px;
-  padding-right: 10px;  
+  padding-left: 20px;
+  padding-right: 15px;  
 }
 
 .userData h3 {
@@ -27,7 +27,13 @@
 }
 
 .button {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .button, .userData {
+    @apply flex;
+  }
 }
