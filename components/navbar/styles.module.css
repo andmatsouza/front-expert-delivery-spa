@@ -26,11 +26,11 @@
   align-items: center;
 }
 
-.nav a svg:first-child {
+.nav svg:first-child {
   margin-right: 1rem;
 }
 
-.nav a svg:last-child {
+.nav svg:last-child {
   margin-left: 1rem;
 }
 
