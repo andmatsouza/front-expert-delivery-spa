@@ -32,9 +32,9 @@ function Restaurant({ id, children }: TypePageProps) {
           <div className="flex flex-col md:flex-row mb-3">
             <h1>Burger King</h1>
             <div className={Styles.tags}>
-              <span>Entrega grátis</span>
-              <span>Compre 1 e leve 2</span>
-              <span>Abre às 12h</span>
+              <span className="tag-purple">Entrega grátis</span>
+              <span className="tag-orange">Compre 1 e leve 2</span>
+              <span className="tag-gray">Abre às 12h</span>
             </div>
           </div>
           <p>

@@ -14,8 +14,7 @@
   color: #626264;
 }
 
-.details {
-  max-width: 580px;
+.details { 
   @apply w-full;
 }
 
