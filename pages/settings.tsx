@@ -5,19 +5,12 @@ import {
   SettingsMarketingPreferences,
   SettingsSavedAddress,
   SettingsPaymentMethods,
-  SettingsCards,
+  SettingsMyCards,
   SettingsSupport,
-  SettingsInveitedFriend,
+  SettingsInviteFriend,
   SettingsDiscounts,
 } from "../components";
-import {
-  IconArrowRight,
-  IconPaymentMethod,
-  IconCards,
-  IconSupport,
-  IconInvitedFriend,
-  IconVoucher,
-} from "../components/icon-family";
+
 import Styles from '../styles/settings.module.css';
 
 const Settings: NextPage = () => {
@@ -46,7 +39,7 @@ const Settings: NextPage = () => {
             <SettingsPaymentMethods />
           </li>
           <li>
-            <SettingsCards />
+            <SettingsMyCards />
           </li>
         </ul>
         <p>Outros</p>
@@ -55,7 +48,7 @@ const Settings: NextPage = () => {
             <SettingsSupport />
           </li>
           <li>
-            <SettingsInveitedFriend />
+            <SettingsInviteFriend />
           </li>
           <li>
             <SettingsDiscounts />
