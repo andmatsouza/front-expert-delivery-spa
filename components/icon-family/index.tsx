@@ -29,3 +29,4 @@ export * from "./icon-support";
 export * from "./icon-invited-friend";
 export * from "./icon-voucher";
 export * from "./icon-close";
+export * from "./icon-plus";
