@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Button } from "../../";
 import {
   IconArrowRight,
   IconSupport,
@@ -8,17 +7,8 @@ import {
 import { Dialog } from '@headlessui/react';
 
 export const SettingsSupport = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-
-  const handleSend = () => {
-    setIsLoading(true);
-
-    setTimeout(() => {
-      setIsLoading(false);
-      setIsOpen(false);
-    }, 3000)
-  };
+  const [isOpen, setIsOpen] = useState<boolean>(false);  
+ 
   return (
     <>
       <button onClick={() => setIsOpen(true)}>
@@ -47,17 +37,7 @@ export const SettingsSupport = () => {
               </button>
             </Dialog.Title>
 
-            <p>[tabs]</p>
-            
-
-            <Button 
-            variant="primary" 
-            loadingMessage="Enviando..." 
-            isLoading={isLoading} 
-            onClick={handleSend} 
-            >
-              Salvar Mudanças
-            </Button>
+            <p>[Lista de opções]</p>           
           </Dialog.Panel>
         </div>
       </Dialog>
