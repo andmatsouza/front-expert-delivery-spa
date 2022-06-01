@@ -41,13 +41,13 @@ export const SettingsPaymentMethods = () => {
             as="h2" 
             className="mb-8 flex justify-between items-center"
             >
-              <div>Métodos de Pagamentos</div>
+              <div>Meios de Pagamentos</div>
               <button onClick={() => setIsOpen(false)}>
                 <IconClose color="#A3A3A4" />
               </button>
             </Dialog.Title>
 
-            <p>[tabs]</p>
+            <p>[3 botões]</p>
             
 
             <Button 
@@ -56,7 +56,7 @@ export const SettingsPaymentMethods = () => {
             isLoading={isLoading} 
             onClick={handleSend} 
             >
-              Salvar Mudanças
+              Atualizar preferências
             </Button>
           </Dialog.Panel>
         </div>
